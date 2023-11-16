@@ -1,0 +1,13 @@
+---
+name: EA
+description: 'Perform Employee Related '
+basePath: /ea
+openApiSpec: EA.yaml
+environmentSpec: Dev
+authMethod: none
+azureRateLimit:
+  noOfCalls: 2
+  renewalPeriod: 60
+  counter: ip-address
+schemes: []
+routes: []
