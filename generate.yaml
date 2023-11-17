@@ -7,7 +7,7 @@ environmentSpec: Dev
 type: API
 authMethod: none
 azureRateLimit:
-  noOfCalls: 2
+  noOfCalls: 7
   renewalPeriod: 60
   ratepolicy: api
   counter: ip-address
