@@ -9,7 +9,9 @@ authMethod: none
 azureRateLimit:
   noOfCalls: 7
   renewalPeriod: 60
-  ratepolicy: api
+  ratepolicy: product
   counter: ip-address
+product:
+  productName: TektonKT
 schemes: []
 routes: []
