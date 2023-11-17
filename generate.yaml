@@ -6,12 +6,31 @@ openApiSpec: EA.yaml
 environmentSpec: Dev
 type: API
 authMethod: none
+filterIp:
+  allowip: 203.192.253.87
+  filterpolicy: api
 azureRateLimit:
-  noOfCalls: 7
+  noOfCalls: 2
   renewalPeriod: 60
   ratepolicy: product
   counter: ip-address
+responseCache:
+  timeDuration: 30
+  cachepolicy: api
 product:
   productName: TektonKT
+validateJWT:
+  headerName: Authorization
+  failedStatusCode: 401
+  failedStatusMessage: Authorization failure
+  openIdURL: https://sit.identity.idmodule.eu/.well-known/openid-configuration
+  requiredClaims:
+    name: aud
+    match: all
+  jwtpolicy: api
+corelation:
+  correlationId: "true"
+  trace: "true"
+  correlationpolicy: api
 schemes: []
 routes: []
