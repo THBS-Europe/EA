@@ -25,12 +25,10 @@ validateJWT:
   failedStatusMessage: Authorization failure
   openIdURL: https://sit.identity.idmodule.eu/.well-known/openid-configuration
   requiredClaims:
-    name: aud
-    match: all
+    name: ""
+    match: ""
   jwtpolicy: api
 corelation:
-  correlationId: "true"
-  trace: "true"
   correlationpolicy: api
 schemes: []
 routes: []
