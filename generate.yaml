@@ -3,7 +3,7 @@ name: EA
 description: 'Perform Employee Related '
 basePath: /ea
 openApiSpec: EA.yaml
-environmentSpec: Dev
+environmentSpec: QA
 type: API
 authMethod: none
 filterIp:
